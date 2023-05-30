@@ -1,0 +1,378 @@
+/* Start of Body*/
+
+body {
+    background-image: url('../pics/background.png');
+    background-size: contain;
+}
+
+.body-container{
+   display:grid;
+   grid-template-rows: 100px 1fr;
+   grid-template-columns: repeat(4,1fr);
+}
+
+.fishMe{
+    height:auto;
+    width: 15vw;
+    justify-content: center;
+}
+
+.fishMe-container{
+    align-items: center;
+    display:grid;
+    border-radius:5px;
+    background: var(--brown);
+    width: fit-content;
+}
+
+.title{
+    height:auto;
+    width: 80vw;
+}
+
+.title-container{
+    grid-column: 1/5;
+    display:grid;
+    grid-row: 2;
+    justify-items: center;
+}
+.hook-container{
+    width: fit-content;
+    height:fit-content;
+    justify-items: end;
+    grid-column:4;
+}
+
+.hook-div{
+    display:flex;
+    justify-content:center;
+    place-self: center;
+}
+.hook{
+    height:auto;
+    width:3vw;
+}
+
+/* Second Body Here */
+.second-body{
+    display:grid;
+    grid-template-rows: 480px;
+    grid-row: 2;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+
+.tagline-container{
+    width: 100%;
+    display:grid;
+    justify-content: center;
+}
+
+.tagline{
+    height:auto;
+    width:80vw;
+    justify-content: center;
+}
+
+/* End of Header */
+
+.main-container{        /* grid container for the whole body then divide into 2 rows*/
+    display:grid;
+    grid-template-rows: repeat(2, 480px);
+}
+
+.trending-container{
+    display:grid;
+    grid-template-rows: 96px 384px;
+}
+
+hr.broken-line{
+    height: 2px;
+    border-top: 3px dashed var(--cream);
+    width:90%;
+    border-bottom:0;
+    align-self: center;
+}
+.text-container{
+    display:grid;
+    grid-template-columns: 20vw 1fr;
+}
+
+.text-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brown);
+    border-radius: 2px;
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight:bold;
+    padding:  0px;
+    width:9vw;
+    height: 9.7vh;
+    justify-items: center;
+    margin-top: 1.5vh;
+    margin-left: 0.75vw;
+    margin-bottom: 1.25418vh;
+    
+}
+
+.text-label-backg{
+    border-radius: 10px;
+    background-color: rgba(255, 242, 238, 0.6);     /*Same color "--cream", only converted to rgba*/
+    margin-left: 5vw;
+    margin-right: 4.5vw;
+    margin-top: 1.5vh;
+}
+
+
+.main-area{
+    border-radius: 15px;
+    background-color: var(--cream);
+    width: 85vw;
+    margin-left: 5vw;
+    display: grid;
+    grid-template-columns: 5vw 1fr 5vw;
+    margin-right: 5vw;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+    align-items: center;
+    justify-items: center;
+}
+
+/*for arrow, icon retrieved from font awesome*/
+.fa-solid{      
+    color:var(--brown);
+    font-size: 1.5em;
+}
+
+.fa-circle-arrow-right{
+    grid-column: 3;
+}
+
+.fa-circle-arrow-right{
+    grid-column: 3;
+}
+
+
+.for-you-container{
+    display:grid;
+    grid-template-rows: 96px 384px;
+}
+/*arrow icon edit end*/
+
+/*Second Page Start*/
+
+.second-main-container{
+    display:grid;
+}
+
+.contact-container{
+    display:flex;
+    justify-content: center;
+
+}
+
+.contacts{
+    height: auto;
+    margin-top: 7vh;
+    margin-bottom: 5vh;
+    width:70vw;
+}
+
+.slider {
+  width: 100%;
+  padding: 100px 0px 100px 0px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.slides > div {
+  flex-shrink: 0;
+  width: 235vw; /* 1488px @ 1920px  */
+  margin-right: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  background: rgba( 0, 0, 0, 0.0);
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  font-size: 100px;
+}
+
+
+.slides > div > div{
+    scroll-snap-align: start;
+    width:  11%;
+}
+
+.slides > div > div > a{
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.slides > div > div > a > *{
+    width:  80%;
+
+}
+
+.slider > a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+.slider > a:active {
+  top: 1px;
+}
+.slider > a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+.body-block{
+    background-color: var(--brown);
+    border-radius:5px;
+    height: 160px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.title-block{
+    background-color: var(--brown);
+    border-radius:5px;
+    height: 45px;
+    color: var(--cream);
+    justify-content: center;
+    font-size: 18px;
+}
+
+.title-block,.body-block{
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    width:  100%;
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+  }
+
+@media (max-width:  600px){
+    .trending-container, .for-you-container{
+        grid-template-rows: 70px 384px;
+    }
+
+    .text-label {
+        font-size: 24px;
+        width: 23.5vw;
+    }
+
+    .text-container{
+        grid-template-columns: 35vw 1fr;
+    }
+
+    .second-body{
+        display: block;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .hook-container{
+        height: ;
+    }
+
+}
+@media (max-width: 600px) {
+  .slides > div {
+    min-width: 800vw; /* 1 stories */
+  }
+}
+
+@media (max-width: 1000px) {
+  .slides > div {
+    width: 350vw; /* 2 stories */
+  }
+}
+.SeeMorebutton{
+    background: var(--brown);
+    border: none;
+    color: var(--cream);
+    border-radius: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 1.1vw;
+    margin-left: 157vw;
+    margin-bottom: 2vh;
+}
+.SeeMorebutton:hover{
+    background-color: #c9bbb7;
+    color: var(--brown);
+}
+
+.story-title{
+    overflow: hidden;
+    max-width: 67%;
+}
+
+.fishMe-container:hover{
+    back
+}
+
+.fishMeFullContainer:hover {
+    top: 8px;
+    position: relative;
+    transform: scale(1.1);
+    background-color: rgba(256, 256, 256, 0.2);
+    border-radius: 10px;
+}
+
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+

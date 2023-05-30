@@ -1,0 +1,205 @@
+:root{
+    --brown: #8b6e65;
+    --cream: #fff2ee;
+}
+
+body{
+    background-image: url("../pics/background.png");
+    padding: 0;
+    margin:0;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background-size: contain;
+}
+
+/*Body Here*/
+.main-container{        /* grid container for the whole body then divide into 2 rows*/
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newest-container{
+    display:grid;
+    margin-bottom: 1rem;
+}
+
+
+.slider {
+  width: 100%;
+  text-align: center;
+  
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+}
+
+
+.slides > div {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; /* 1488px @ 1920px  */
+      background: rgba( 0, 0, 0, 0.0);
+}
+
+
+.slides > div > div{
+    width:  33.33%;
+}
+
+.slides > div > div > a{
+    color: var(--cream);
+    text-decoration: none;
+}
+
+.slides > div > div > a > * {
+    width:  86%;
+
+}
+@media (max-width: 600px) {
+  .slides > div > div {
+    min-width: 100%; /* 1 stories */
+  }
+}
+
+@media (max-width: 1000px) {
+  .slides > div > div {
+    width: 50%; /* 2 stories */
+  }
+}
+
+hr.broken-line{
+    height: 2px;
+    border-top: 5px dashed var(--cream);
+    width:90%;
+    border-bottom:0;
+    align-self: center;
+    margin-right: 35vw;
+    margin-top: 2vh;
+}
+.text-container{
+    display:grid;
+    grid-template-columns: 20vw 1fr;
+}
+
+.text-label{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brown);
+    border-radius: 2px;
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25vw;
+    font-weight:bold;
+    width:9vw;
+    height: 4vw;
+    margin-top: 1.5vh;
+    justify-items: center;
+    margin-left: 0.75vw;
+    margin-bottom: 1.25418vh;
+    
+}
+
+.text-label-backg{
+    border-radius: 10px;
+    background-color: rgba(255, 242, 238, 0.6);     /*Same color "--cream", only converted to rgba*/
+    margin-left: 5vw;
+    margin-right: 4.5vw;
+    margin-top: 1.5vh;
+}
+
+
+.main-area{
+    display: flex;
+    border-radius: 15px;
+    background-color: var(--cream);
+    width: 85vw;
+    height: fit-content;
+    margin-left: 4vw;
+    margin-right: 5vw;
+    margin-right: 5vw;
+    margin-top: 6vh;
+    margin-bottom: 2vh;
+    align-items: center;
+    justify-items: center;
+}
+
+.trending-container{
+    margin-bottom: 50px;
+}
+
+/*for arrow, icon retrieved from font awesome*/
+.fa-solid{      
+    color:var(--brown);
+    font-size: 2.7vw;
+}
+
+.fa-circle-arrow-right{
+    grid-column: 3;
+}
+
+.fa-circle-arrow-right{
+    grid-column: 3;
+}
+
+.first-division{
+    background-color: rgba(255, 242, 238, 0.6);
+    width: 20vw;
+    height: 15vh;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+    align-items: center;
+}
+
+.first-division-title{
+    background-color: var(--brown);
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-size: 3.5vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    border-radius: 5px;
+    
+}
+/*arrow icon edit end*/
+
+/* Carousel Here*/
+
+.body-block{
+    background-color: var(--brown);
+    border-radius:5px;
+    height: 160px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.title-block{
+    background-color: var(--brown);
+    color: var(--cream);
+    border-radius:5px;
+    height: 45px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.title-block,.body-block{
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    width:  100%;
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+  }
+
+.story-title{
+    overflow: hidden;
+    max-width: 67%;
+}

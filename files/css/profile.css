@@ -1,0 +1,143 @@
+/*Body Here*/
+
+.body-container{
+    display:grid;
+    /*grid-template-rows: 50vh 1fr;*/
+    grid-template-columns: 30vw 1fr 1fr;
+    margin-top: 5px;
+    background-image: url("../pics/background.png");
+    background-size:cover;
+}
+
+.first-row{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon{
+    height:auto;
+    width:20vw;
+}
+
+.second-row,.third-row{
+    display: grid;
+    grid-template-rows: 20vh 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+.address-container{
+    grid-row: 4;
+}
+
+.fullname-container{
+    grid-row:2;
+}
+.fullname-input{
+    grid-row:3;
+}
+
+.birthdate-container{
+    grid-row:4;
+}
+
+.birthdate-input{
+    grid-row:5;
+}
+
+.form-label{
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5vw;
+    color:var(--cream)
+}
+
+.third-row input[type="text"]{
+    border-radius: 5px;
+    color:var(--cream);
+    background-color:var(--brown);
+    width: 20vw;
+    height: 3.5vh;
+}
+
+.second-row input[type="text"]{
+    border-radius: 5px;
+    color:var(--cream);
+    background-color:var(--brown);
+    width: 20vw;
+    height: 3.5vh;
+    justify-items: center;
+}
+
+.username-container,.address-container,.fullname-container,.birthdate-container{
+    display: flex;
+    justify-content: center;
+}
+::placeholder{
+    color:var(--cream);
+    text-align:center;
+}
+
+.title{
+    color: var(--cream);
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-size: 2vw;
+    background-color: var(--brown);
+    padding-left: 6vw;
+    padding-right: 6vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: fit-content;
+    height: fit-content;
+}
+    
+
+.title-container{
+    display: flex;
+    border-radius: 10px;
+    background-color: rgba(255, 242, 238, 0.6);  /*Same with var(--cream); just converted to rgba*/
+    padding-right: 1vw;
+    height: 13vh; /* 13vh */
+    padding-left: 1vw;
+    margin-top: 3vh;
+    align-items: center;
+
+}
+
+.userdata-text-container{
+    color: var(--cream);
+    background-color: var(--brown);
+    border: 0px;
+    margin: auto;
+    text-align: center;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: -15px;
+}
+
+
+.logout-bottom-container{
+    display: flex;
+    grid-row: 6;
+    justify-content: flex-end;
+    margin-left: 15vw;
+}
+
+.logout-button{
+    color:var(--brown);
+    background-color:rgba(255, 242, 238, 0.6);
+    border: none;
+    border-radius:5px;
+    width:10vw;
+    font-family: 'Inter', sans-serif;
+    font-size:2vw;
+    height: fit-content;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+
+.logout-button:hover {
+    filter: brightness(150%);
+    color: var(--cream);
+    background-color:var(--brown);
+}

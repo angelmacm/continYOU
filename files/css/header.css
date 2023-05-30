@@ -1,0 +1,154 @@
+:root{
+    --brown: #8b6e65;
+    --cream: #fff2ee;
+
+}
+
+body{
+    background-color: var(--cream);
+    padding: 0;
+    margin:0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+.total-header-container{
+    display: flex;
+    background-color: var(--brown);
+    justify-content: space-between;
+}
+/* start of hamburger menu edits */
+/* end of hamburger menu edits */
+
+.header-container{
+    display: flex;
+    flex-basis: 100%;
+    background-color: var(--brown) ;
+    justify-content: space-between;
+}
+
+.spacer_header{
+    width: 52.54vw; /* 740px @ 1920px */
+}
+.header-text{
+    color: var(--cream);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight:bold;
+    text-decoration: none;
+
+}
+
+.createStoryButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8.65vw;
+    width: auto;
+    text-align: center;
+}
+
+
+
+.loginText{
+    width: 70px;
+}
+
+.logged-in-text{
+    width: 175px;
+}
+
+.my-story-text{
+    width: 105px;
+}
+
+.book-icon{
+    width: 80px;
+    margin-left:20px;
+}
+
+.right-side, .left-side{
+    display: flex;
+    align-items: center;
+}
+.left-side * {
+    margin: 0px 5px 0px 5px;
+}
+
+.acc-icon{
+    height:auto;
+    width:68px;
+    max-width:100px;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width:  800px){
+    .header-text{
+        font-size: 16px;
+    }
+    .acc-icon, .book-icon{
+        width: 50px;
+    }
+    .loginText{
+    width: 50px;
+    }
+
+    .logged-in-text{
+    width: 135px;
+    }
+
+    .createStoryButton{
+        margin-right: 0vw;
+        width: 135px;
+    }
+
+    .my-story-text{
+        width: 85px;
+    }
+
+@media (max-width:  600px){
+    .header-text{
+        font-size: 12px;
+    }
+    .acc-icon, .book-icon{
+        width: 30px;
+    }
+    .loginText{
+    width: 40px;
+    }
+
+    .createStoryButton{
+        width: 110px;
+    }
+
+    .logged-in-text{
+    width: 135px;
+    }
+
+    .my-story-text{
+        width: 85px;
+    }
+
+    
+}
+}
+
+.header-text::after{
+    content: "";
+    width: 0;
+    height: 4px;
+    background-color: var(--cream);
+    margin: auto;
+    display: block;
+
+}
+
+.header-text:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+    margin-top: 8px;
+}
+
+.header-text:hover{
+    color: var(--cream);
+}

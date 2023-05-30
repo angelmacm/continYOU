@@ -1,0 +1,73 @@
+:root{
+	--brown: #8b6e65;
+    --cream: #fffeee;
+}
+
+body{
+	line-height: 1.5;
+	background: url(../pics/background.png);
+	background-size: contain;
+}
+
+img{
+	height: auto;
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.format{
+	text-align: center;
+	font-size: 20px;
+	color: var(--cream);
+}
+
+.format input[type="text"], input[type="password"]
+{
+	background: var(--brown);
+	border: 0px;
+	padding: 5px;
+	width: auto;
+	color: var(--cream);
+	height: 30px;
+	border-radius: 10px;
+	outline: none;
+
+}
+
+p {
+	font-size: 24px;
+	margin-bottom: 0px;
+}
+
+::-webkit-input-placeholder{
+	color: var(--cream);
+}
+
+.format input[type="submit"], input[type="Login"]
+{
+	background: var(--brown);
+	border: none;
+	color: var(--cream);
+	border-radius: 10px;
+	height: 50px;
+	width: 100px;
+}
+.format input[type="submit"]:hover {
+	cursor: pointer;
+	background: var(--brown);
+	color: var(--cream);
+}
+
+.format a{
+	color: black;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
